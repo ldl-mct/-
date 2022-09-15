@@ -1,0 +1,27 @@
+
+body{
+    background: url("/media/img/bj.png") no-repeat;
+    background-size:100% ;
+}
+.box{
+    width: 500px;
+    height: 500px;
+    background: rgba(255,255,255,0.5);
+    margin: 200px auto;
+    padding: 20px;
+    position: relative;top: 100px;
+}
+.box h1{
+    width: 100%;
+    background: cornsilk;
+    text-align: center;
+}
+.box form input{
+    width: 100%;
+    height: 40px;
+}
+.box form textarea{
+    width: 100%;
+    height: 300px;
+    margin: 20px 0;
+}
