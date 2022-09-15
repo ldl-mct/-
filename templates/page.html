@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册页面</title>
+{#    导入css文件#}
+    <link type="text/css" rel="stylesheet" href="media/css/style.css">
+     <style>
+        a{text-decoration: none;}
+      body{
+    background: url("/media/img/bj1.jpg") no-repeat;
+    background-size:100% ;
+}
+.box{
+    width: 400px;
+    height: 820px;
+    background: rgba(255,255,255,0.5);
+    margin: 10px auto;
+    padding: 20px;
+    {#position: relative;top: 50px;#}
+}
+.box form input{
+    width: 300px;
+    height: 40px;
+    margin: 8px;}
+        .box1{width: 300px;height: 45px ;margin:25px;font-size:20px;text-align: center; line-height: normal; position: relative;left: 15px;top: -25px;
+            background-color: cornflowerblue;border: none}
+
+    </style>
+</head>
+ <div class="box">
+       <h3 style="position: relative;left: 150px">注册</h3>
+{#    提交表单标签#}
+{#        <form method="post" enctype=" multipart/form-data" style="position: relative;left: 30px">#}
+{#            <input type="text" placeholder="请输入用户名" name="newstitle" >#}
+{#            <input type="password" placeholder="请输入密码" name="newscon" >#}
+{#            <input type="text" placeholder="请输入电话号码">#}
+{#            <input type="" placeholder="请输入个人简介">#}
+{##}
+{#        </form>#}
+     <form method="post" enctype="multipart/form-data"><table border="0">
+              <tr>
+                  <td> <p>姓名：</p></td>
+                  <td><input type="text" placeholder="请输入真实姓名" name="xingming" style="position: relative;left: -320px" >  </td>
+              </tr>
+              <tr>
+                 <td>  <p>学号：</p> </td>
+                 <td> <input type="text" name="xuehao" style="position: relative;left: -320px">  </td>
+             </tr>
+                <tr>
+                 <td>  <p>电话：</p> </td>
+                 <td> <input type="text" name="dianhua" style="position: relative;left: -320px">  </td>
+             </tr>
+             <tr>
+                 <td> <p>密码：</p></td>
+                 <td><input type="password" placeholder="请输入密码" name="mima" style="position: relative;left: -320px"></td>
+             </tr>
+             <tr >
+                 <td > <p>性别：</p> </td>
+                 <td ><input type="radio" name="gender" id="man" style="width: 20px;height: 20px;position: relative;right: 290px"  >
+                     <label for="man" style="position: relative;right: 350px ;top: -5px">男</label></td>
+                <td ><input type="radio" name="gender" id="weman" style="width: 20px;height: 20px; position: relative;right: 530px;top: 10px">
+                    <label for="weman" style="position: relative;right: 540px ;top: -20px">女</label> </td>
+            <tr>
+            <tr>
+                <tr>
+                 <td>  <p>简介：</p> </td>
+                 <td> <textarea placeholder="请输入内容" name="jianjie" style="position: relative;left: -310px;height: 100px;width: 300px"></textarea>
+{#                     <input type="text" name="xuehao" style="position: relative;left: -320px;height: 100px ">  </td>#}
+             </tr>
+                 <td>
+                       <script type="text/javascript" src="/media/js/res.js" ></script>
+            <input type="file" name="src"><br>
+
+ </div>
+{#     <div class="box1">#}
+{#         <a href="face" >录入人脸</a>#}
+{#     </div>#}
+{#     <div class="box1">#}
+{#         <a href="clear"  >清洗数据</a>#}
+{#     </div><div class="box1">#}
+{#         <a href="load" >比对人脸</a>#}
+{#     </div>#}
+
+        <a href="denglu" style="font-size:20px;position: relative;left: 160px;top: 290px">登录</a>
+        <input  class="box1" type="submit" style="width: 100px;position: relative;left: 100px">
+     </form>
+
+
+{#js导入#}
+<script type="text/javascript" src="/media/js/res.js" ></script>
+</body>
+</html>

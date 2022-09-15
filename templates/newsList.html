@@ -1,0 +1,63 @@
+{#<!DOCTYPE html>#}
+{#<html lang="en">#}
+{#<head>#}
+{#    <meta charset="UTF-8">#}
+{#    <title>个人简介</title>#}
+{#</head>#}
+{#<body>#}
+{#    <a href="news">发布新闻</a>#}
+{#    {% for i in allData %}#}
+{#        {{ i.newstitle }}#}
+{#        {{ i.newscon }}#}
+{#    {% endfor %}#}
+{##}
+{#</body>#}
+{#</html>#}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人简介</title>
+    <style>
+        {#body{background: url("/media/img/bj2.jpg")}#}
+        .box{width: 800px;height: 830px;margin: 20px auto;border: 2px solid black;}
+        .box1{height:120px;width: 120px;border:2px solid black;border-radius: 50% ;
+        position: relative;left: 350px;top:-200px ;}
+        .box2{height:100px;width: 700px;margin: auto;border-bottom: cornflowerblue dotted 2px;
+           position: relative;top: -200px }
+        .box3{ height: 200px;width: 700px;border-radius: 10%;border: cornflowerblue dotted 2px;margin: auto;position: relative;top: -30px}
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <div >
+      <img src="/media/img/bj2.jpg" width="800px">
+        <div class="box1">
+            {% for i in allData %}
+            <div class="news" style="width:130px; height:130px; border-radius:200%; overflow:hidden;">
+                <img src="/media/{{ i.src }}" height="200px" width="200px" border="1">
+            </div>
+{#            {% endfor %}#}
+        </div>
+{#        {% for i in allData %}#}
+
+        <div class="box2" ><h4 style="position: relative;top:20px">姓名:{{ i.xingming }}</h4> </div>
+
+        <div class="box2" style="position: relative;top:-100px; border-top: cornflowerblue dotted 2px;">
+          </tr>
+             <tr>
+                 <td> <h4 style="position: relative;top: -100px">性别：{{ i.gender }}</h4></td>
+                 <td><h4 style="position: relative;top: -140px;left: 300px">学号:{{ i.xuehao }}</h4></td>
+                 <td><h4 style="position: relative;top: -80px">电话:{{ i.dianhua }}</h4></td>
+             </tr>
+        </div>
+       <div class="box3">
+           <h4 style="position: relative;top: -60px">简介：{{ i.jianjie }}</h4>
+       </div>
+        </div><br><br><br><br><br><br>
+        {% endfor %}
+
+</div>
+</body>
+</html>
